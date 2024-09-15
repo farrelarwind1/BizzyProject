@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizzy Checkout</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      
+      .checkout {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 45%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .checkout h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      
+      .checkout-item {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+      }
+      
+      .checkout-item:last-child {
+        border-bottom: none;
+      }
+      
+      .checkout-title {
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .checkout-price {
+        float: right;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .checkout-description {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #666;
+      }
+      
+      .order-summary {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 45%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .order-summary h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      
+      .order-summary-item {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+      }
+      
+      .order-summary-item:last-child {
+        border-bottom: none;
+      }
+      
+      .order-summary-title {
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .order-summary-value {
+        float: right;
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .payment-methods {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 45%;
+        margin-top: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .payment-methods h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      
+      .payment-method {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+      }
+      
+      .payment-method:last-child {
+        border-bottom: none;
+      }
+      
+      .payment-method-icon {
+        margin-right: 10px;
+      }
+      
+      .payment-method-title {
+        font-weight: bold;
+        color: #333;
+      }
+      
+      .payment-method-input {
+        margin-left: auto;
+      }
+      
+      .payment-method-input input {
+        width: 20px;
+        height: 20px;
+        accent-color: #333;
+      }
+      
+      .button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      
+      .button:hover {
+        background-color: #555;
+      }
+      
+      .input-field {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      
+      .input-field:focus {
+        outline: none;
+        border-color: #333;
+      }
+      
+      .input-label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      
+      .radio-button-container {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      
+      .radio-button-container input {
+        width: 20px;
+        height: 20px;
+        accent-color: #333;
+        margin-right: 5px;
+      }
+      
+      .radio-button-container label {
+        font-size: 14px;
+        color: #333;
+      }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="checkout">
+          <h2>Checkout</h2>
+          <div class="checkout-item">
+            <div class="checkout-title">1 Year Subscription</div>
+            <div class="checkout-price">$ 99.99</div>
+            <div class="checkout-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.</div>
+            <div class="radio-button-container">
+              <input type="radio" name="subscription" id="year">
+              <label for="year"></label>
+            </div>
+          </div>
+          <div class="checkout-item">
+            <div class="checkout-title">Webinar: How to Make passive income from trading your underwear</div>
+            <div class="checkout-price">$ 15.99</div>
+            <div class="checkout-description">#A32132231123</div>
+            <div class="radio-button-container">
+              <input type="radio" name="subscription" id="webinar">
+              <label for="webinar"></label>
+            </div>
+          </div>
+          <div class="checkout-item">
+            <div class="checkout-title">Schedule Details</div>
+            <div class="checkout-description">Webinar Title: How to make passive income from trading</div>
+            <div class="checkout-description">Date: Monday, 4 December 2023</div>
+            <div class="checkout-description">Class: Trading & Stock</div>
+            <div class="checkout-description">Time: 12:30- 2:30 PM</div>
+          </div>
+          <div class="checkout-item">
+            <div class="checkout-title">Webinar Description</div>
+            <div class="checkout-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.</div>
+          </div>
+        </div>
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="order-summary-item">
+            <div class="order-summary-title">Redeem code*</div>
+            <input type="text" class="input-field">
+          </div>
+          <button class="button">Apply</button>
+          <div class="order-summary-item">
+            <div class="order-summary-title">Price</div>
+            <div class="order-summary-value"></div>
+          </div>
+          <div class="order-summary-item">
+            <div class="order-summary-title">Discount</div>
+            <div class="order-summary-value"></div>
+          </div>
+          <div class="order-summary-item">
+            <div class="order-summary-title">Tax</div>
+            
+          </div>
+          <div class="order-summary-item">
+            <div class="order-summary-title">Total</div>
+            <div class="order-summary-value"></div>
+          </div>
+          <button class="button">Purchase</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="payment-methods">
+          <h2>Payment Methods</h2>
+          <div class="payment-method">
+            <div class="payment-method-icon"><img src="https://www.chase.com/content/dam/chase/images/header/chase-logo-black.svg" alt="Chase Bank"></div>
+            <div class="payment-method-title">Bank Transfer</div>
+            <div class="payment-method-input"><input type="radio" name="payment" id="bank-transfer"></div>
+          </div>
+          <div class="payment-method">
+            <div class="payment-method-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="Visa"></div>
+            <div class="payment-method-title">Credit Card</div>
+            <div class="payment-method-input"><input type="radio" name="payment" id="credit-card"></div>
+          </div>
+          <div class="payment-method">
+            <div class="payment-method-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_logo.svg/1200px-Mastercard_logo.svg.png" alt="Mastercard"></div>
+            <div class="payment-method-title">Credit Card</div>
+            <div class="payment-method-input"><input type="radio" name="payment" id="credit-card"></div>
+          </div>
+          <div class="payment-method">
+            <div class="payment-method-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/PayPal_logo.svg/240px-PayPal_logo.svg.png" alt="PayPal"></div>
+            <div class="payment-method-title">Credit Card</div>
+            <div class="payment-method-input"><input type="radio" name="payment" id="credit-card"></div>
+          </div>
+          <div class="input-label">Email Address</div>
+          <input type="email" class="input-field">
+          <div class="input-label">First Name</div>
+          <input type="text" class="input-field">
+          <div class="input-label">Last Name</div>
+          <input type="text" class="input-field">
+          <div class="input-label">Card Number</div>
+          <input type="text" class="input-field">
+          <div class="input-label">Expiration Date</div>
+          <input type="text" class="input-field">
+          <div class="input-label">CVC</div>
+          <input type="text" class="input-field">
+        </div>
+      </div>
+</body>
+</html>

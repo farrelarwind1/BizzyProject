@@ -1,0 +1,164 @@
+.logo{
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper .signup{
+    text-align: center;
+    
+}
+
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    position: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255 255 255 / 100%) 100%, #F7FFF6 100%), url("business\ vector\ illust.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper{
+    width: 900px;
+    background: rgba(255, 255, 255, 0.5);
+    background: white;
+    border: 4px solid grey;
+    border-top: 2px grey;
+    border-right: 2px grey;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    color: #014646;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper .bizzy{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 60%;
+}
+
+.wrapper .log{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.wrapper .input-box{
+    color: grey;
+    width: 70%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-box input{
+    font-size: 38px;
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #121212;
+    opacity: 40%;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    transform: translateY(-40%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.remember-forgot label input{
+    accent-color: #014646;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #014646;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #014646;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    /* margin-top: 20px; */
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #014646;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}

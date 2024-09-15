@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizzy, business is easy</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f1c40f;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        .nav-item:hover {
+            color: #f1c40f;
+        }
+
+        .user-profile {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .user-name {
+            color: #ecf0f1;
+        }
+
+        .bell {
+            color: #f1c40f;
+            font-size: 18px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .left-side {
+            width: 300px;
+            background-color: #34495e;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .profile-card {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            color: #ecf0f1;
+        }
+
+        .profile-status {
+            color: #f1c40f;
+            font-size: 12px;
+        }
+
+        .right-side {
+            flex: 1;
+            background-color: #34495e;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .chat-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ecf0f1;
+        }
+
+        .chat-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-action {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        .chat-action:hover {
+            color: #f1c40f;
+        }
+
+        .chat-messages {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+        .message {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #2c3e50;
+        }
+
+        .message-sender {
+            font-weight: bold;
+        }
+
+        .message-content {
+            margin-left: 10px;
+        }
+
+        .message-time {
+            font-size: 12px;
+            color: #ecf0f1;
+        }
+
+        .chat-input {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .input-field {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #34495e;
+            color: #ecf0f1;
+            border: none;
+        }
+
+        .input-field:focus {
+            outline: none;
+        }
+
+        .send-button {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f1c40f;
+            border: none;
+            color: #2c3e50;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">BIZZY</div>
+        <div class="nav">
+            <a href="#" class="nav-item">Dashboard</a>
+            <a href="#" class="nav-item">Consultation</a>
+            <a href="#" class="nav-item">Webinar</a>
+            <a href="#" class="nav-item">Article and Video</a>
+        </div>
+        <div class="user-profile">
+            <img src="user.png" alt="User Profile" class="profile-image">
+            <span class="user-name">My Account</span>
+            <i class="bell"></i>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-side">
+            <div class="profile-card">
+                <img src="cutie.png" alt="Cutie Patootie" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Cutie Patootie</span>
+                    <span class="profile-status">• Online</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="christopher.png" alt="Christopher Campbell" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Christopher Campbell</span>
+                    <span class="profile-status">In front of the Bar, about whic...</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="houcine.png" alt="Houcine Ncib" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Houcine Ncib</span>
+                    <span class="profile-status">What do you have planned thi...</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="kelly.png" alt="Kelly Sikkema" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Kelly Sikkema</span>
+                    <span class="profile-status">How would you describe yours...</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="ethan.png" alt="Ethan Hoover" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Ethan Hoover</span>
+                    <span class="profile-status">How do you relieve stress?</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="joseph.png" alt="Joseph Pearson" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Joseph Pearson</span>
+                    <span class="profile-status">What's your sign?</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="vicky.png" alt="Vicky Hladynets" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Vicky Hladynets</span>
+                    <span class="profile-status">What was your first concert?</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="jake.png" alt="Jake Nackos" class="profile-image">
+                <div class="profile-info">
+                    <span class="profile-name">Jake Nackos</span>
+                    <span class="profile-status">Did you see that viral YouTube...</span>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="chat-header">
+                <div class="chat-title">Yee Longe Ma Ball</div>
+                <div class="chat-actions">
+                    <a href="#" class="chat-action">...</a>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <div class="message">
+                    <img src="yee.png" alt="Yee Longe Ma Ball" class="profile-image">
+                    <div class="message-content">
+                        <span class="message-sender">Yee Longe Ma Ball</span>
+                        <span class="message-content">Hey, How are you?</span>
+                        <span class="message-time">4.9</span>
+                    </div>
+                </div>
+                <div class="message">
+                    <img src="yee.png" alt="Yee Longe Ma Ball" class="profile-image">
+                    <div class="message-content">
+                        <span class="message-sender">Yee Longe Ma Ball</span>
+                        <span class="message-content">I was asking for your New Business Plans,
+                        ask we are going to discuss it?</span>
+                        <span class="message-time"></span>
+                    </div>
+                </div>
+                <div class="message">
+                    <img src="yee.png" alt="Yee Longe Ma Ball" class="profile-image">
+                    <div class="message-content">
+                        <span class="message-sender">Yee Longe Ma Ball</span>
+                        <span class="message-content">Great! Let's have an online meeting</span>
+                        <span class="message-time"></span>
+                    </div>
+                </div>
+                <div class="message">
+                    <img src="yee.png" alt="Yee Longe Ma Ball" class="profile-image">
+                    <div class="message-content">
+                        <span class="message-sender">Yee Longe Ma Ball</span>
+                        <span class="message-content">01-01-2022</span>
+                        <span class="message-time"></span>
+                    </div>
+                </div>
+                <div class="message">
+                    <img src="yee.png" alt="Yee Longe Ma Ball" class="profile-image">
+                    <div class="message-content">
+                        <span class="message-sender">Yee Longe Ma Ball</span>
+                        <span class="message-content">Where are you, exactly!</span>
+                        <span class="message-time"></span>
+                    </div>
+                </div>
+                <div class="message">
+                    <img src="yee.png" alt="Yee Longe Ma Ball" class="profile-image">
+                    <div class="message-content">
+                        <span class="message-sender">Yee Longe Ma Ball</span>
+                        <span class="message-content">In front of the Bar, about which we had a call!</span>
+                        <span class="message-time"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" class="input-field" placeholder="Type your Message...">
+                <button class="send-button">
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizzy, business is easy</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav {
+  float: right;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1519388647366-a7b8c1a48d55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.articles, .videos {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.articles h2, .videos h2 {
+  margin-top: 0;
+}
+
+.article-card, .video-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article-card img, .video-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.article-card .info, .video-card .info {
+  padding: 10px;
+}
+
+.article-card h3, .video-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.article-card p, .video-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.article-card .rating, .video-card .rating {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.article-card .info .author {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.article-card .info .author span {
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.video-card .info .author {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.video-card .info .author span {
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.article-card .info .length {
+  font-size: 12px;
+  color: #666;
+}
+
+.video-card .info .length {
+  font-size: 12px;
+  color: #666;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">BIZZY</div>
+        <div class="nav">
+          <a href="#">Dashboard</a>
+          <a href="#">Consultation</a>
+          <a href="#">Webinar</a>
+          <a href="#">Article and Video</a>
+          <a href="#">My Account</a>
+        </div>
+      </div>
+    
+      <div class="hero">
+        <h1>Unlimited access to business related articles and learning videos all in one place</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button>Search</button>
+        </div>
+      </div>
+    
+      <div class="articles">
+        <h2>Articles</h2>
+        <div class="row">
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>How to make passive income from trading</h3>
+              <p>There are a lot of ways to have a passive...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1565958011703-406332d49647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>Everybody can cook and open their own restaurant</h3>
+              <p>Everybody can cook, even there's a dedicated...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1574071384796-52a01083e76f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>Maximalizing profits on cattle business</h3>
+              <p>Maintaining cows might be difficult but...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1558981017-282648710964?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>Kickstart your own cafe and coffee shop</h3>
+              <p>We focus on ergonomics and meeting you...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1517694712202-5a96c17584a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>Maintaining and improving our business to the next level</h3>
+              <p>We focus on ergonomics and meeting you...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1529626657467-19d7a5d23711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>Fashion business trends and uprising</h3>
+              <p>We focus on ergonomics and meeting you...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1574071384796-52a01083e76f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>How to maintain UMKM business</h3>
+              <p>We focus on ergonomics and meeting you...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+          <div class="article-card">
+            <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Article Image">
+            <div class="info">
+              <h3>How to manage a restaurant chain</h3>
+              <p>We focus on ergonomics and meeting you...</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="videos">
+        <h2>Videos</h2>
+        <div class="row">
+          <div class="video-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-5b9960725255?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Video Image">
+            <div class="info">
+              <h3>Jurus jitu mendapatkan 271 Trilliun dengan mudah dan cepat</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Harvey Ellis</span></div>
+              <div class="length"><span>Video Length: </span> 25 minutes</div>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="video-card">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71aae87f27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Video Image">
+            <div class="info">
+              <h3>Meraup cuan dari menjadi konten kreator dan youtuber</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Bocil of Death</span></div>
+              <div class="length"><span>Video Length: </span> 34 minutes</div>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="video-card">
+            <img src="https://images.unsplash.com/photo-1529626657467-19d7a5d23711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Video Image">
+            <div class="info">
+              <h3>Tips cara menggandakan uang secara cepat</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Dimas Cakwe</span></div>
+              <div class="length"><span>Video Length: </span> 45 minutes</div>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="video-card">
+            <img src="https://images.unsplash.com/photo-1519388647366-a7b8c1a48d55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Video Image">
+            <div class="info">
+              <h3>Merajut asa dari penghasilan sebagai tukang cukur</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              <div class="rating">4.5 <span>★</span></div>
+              <div class="author">Author: <span>Rudi Tambil San</span></div>
+              <div class="length"><span>Video Length: </span> 1 h 20 minutes</div>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <button class="button">See more</button>
+      </div>
+    
+      <div class="footer">
+        <p>&copy; Bizzy. All rights reserved. Designed by Bizzy Team</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    
+      <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>
